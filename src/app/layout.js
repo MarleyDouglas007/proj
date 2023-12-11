@@ -1,11 +1,16 @@
 import './globals.css'
 import styles from './styles.module.css'
 import Image from 'next/image'
-import logo from  '../../public/logo.png'
-import busca from '../../public/iconsBusca.png'
-import login from '../../public/iconsLogin.png'
-import carrinho from '../../public/iconsCarrinho.png'
+import logo from  '../../public/Frame 7.png'
+import premium from '../../public/Frame 8.png'
+import search from '../../public/Rectangle 4.png'
+import icon from '../../public/Account.png'
 
+function InicialL(){
+  return(
+    <span className={styles.degrad}></span>
+  );
+}
 export const metadata ={
   title: 'Freebie | Planty |  Plants E-commerce Landing Page Design',
 }
@@ -17,51 +22,46 @@ function Logo ({x, y}){
     </div>
   )
 }
-
-function Menu1 ({x, y}) {
+function ItemMenu ({nome}){
   return(
-    <p style={{left:x, top:y}} className={styles.menu1}>Plants</p>
+
+    <p className={styles.itemMenu}>{nome}</p>
+  );
+
+}
+
+function Menu({children}){
+  return(
+    <ul className={styles.menu}>
+      {children.map((itemMenu)=>(
+        <li key={itemMenu.nome}>{itemMenu}</li>
+      ))}
+    </ul>
   );
 }
 
-function Menu2 ({x, y}) {
-  return(
-    <p style={{left:x, top:y}} className={styles.menu2}>For offices</p>
-  );
-}
 
-function Menu3 ({x, y}) {
+//aaa
+function Premium () {
   return(
-    <p style={{left:x, top:y}} className={styles.menu3}>Plants care</p>
-  );
-}
-
-function Menu4 ({x, y}) {
-  return(
-    <p style={{left:x, top:y}} className={styles.menu4}>About</p>
-  );
-}
-
-function IconeBusca ({x, y}) {
-  return(
-    <p style={{left:x, top:y}} className={styles.iconeBusca}>
-      <Image src={busca}/>
+    <p className={styles.premium}>
+      <Image src={premium}/>
     </p>
   );
 }
 
-function IconeLogin ({x, y}) {
+function Search () {
   return(
-    <p style={{left:x, top:y}} className={styles.iconeLogin}>
-      <Image src={login}/>
+    <p className={styles.search}>
+      <span className={styles.s}>S</span>earch <span className={styles.anime}>A</span>nime
     </p>
   );
 }
 
-function IconeCarrinho ({x, y}) {
+function Icon () {
   return(
-    <p style={{left:x, top:y}} className={styles.iconeCarrinho}>
-      <Image src={carrinho}/>
+    <p className={styles.icon}>
+      <Image src={icon}/>
     </p>
   );
 }
@@ -71,14 +71,20 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <header>
-          <Logo x={50} y={20.08}/>
-          <Menu1 x={377.57} y={28.29}/>
-          <Menu2 x={440.74} y={28.29}/>
-          <Menu3 x={525.9} y={28.29}/>
-          <Menu4 x={613.91} y={28.29}/>
-          <IconeBusca x={888.51} y={26.26}/>
-          <IconeLogin x={929.03} y={26.26}/>
-          <IconeCarrinho x={969.48} y={26.26}/>
+          <div className={styles.nav}>
+
+          
+          <Logo x={70} y={58}/>
+          <Menu>
+            <ItemMenu nome = <p className={styles.degrad}>Geren</p>/>
+             <ItemMenu nome = "Movies"/>
+             <ItemMenu nome = "ONAs"/>
+             <ItemMenu nome = "News"/>
+          </Menu>
+          <Premium />
+          <Search/>
+          <Icon />
+          </div>
         </header>
         <main>
           {children}

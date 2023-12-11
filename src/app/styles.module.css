@@ -1,81 +1,72 @@
+.nav{
+    /* border:1px solid #fff; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start ;
+    align-items: center;
+}
+
 .logo{
-    width: 87.296px;
-    height: 25.391px;
-    flex-shrink: 0; 
-    position:absolute;
+    /* border: 1px solid #fff; */
+    width: 70px;
+    height: 58px;
+    /*flex-shrink: 0; 
+    position:absolute;*/
 }
 
-.menu1 {
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: -0.444px;
-
-    margin: 0;
-    padding: 0;
-
-    position: absolute;
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    font-size:24px ;
+    list-style-type: none;
 }
 
-.menu2 {
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: -0.444px;
+.premium{
+    /* border: 1px solid #fff; */
 
-    margin: 0;
-    padding: 0;
+    left:1495px;
+    position: fixed;
 
-    position: absolute;
 }
 
-.menu3 {
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: -0.444px;
+.search{
+    border: 1px solid #fff;
+    border-radius: 15px;
+    width: 238px;
+    text-align: center;
+    
+    padding: 5px 0;
 
-    margin: 0;
-    padding: 0;
+    left: 1620px;
+    position:fixed;
 
-    position: absolute;
+    
+}
+.s{
+    background: var(--graaadient, linear-gradient(96deg, #F22323 2.68%, #33ADDF 103.41%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.anime{
+    background: var(--graaadient, linear-gradient(96deg, #F22323 2.68%, #33ADDF 103.41%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.menu4 {
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: -0.444px;
+.icon{
+    /* border: 1px solid #fff; */
+    left: 1876px;
+    position: fixed;
 
-    margin: 0;
-    padding: 0;
-
-    position: absolute;
+    
 }
 
-.iconeBusca{
-    margin: 0;
-    padding: 0;
-
-    width: 17.033px;
-    height: 17.033px;
-
-    position: absolute;
+.degrad{
+    background: var(--graaadient, linear-gradient(96deg, #F22323 2.68%, #33ADDF 103.41%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
-.iconeLogin{
-    margin: 0;
-    padding: 0;
-
-    width: 14.194px;
-    height: 14.194px;
-
-    position: absolute;
-}
-
-.iconeCarrinho{
-    margin: 0;
-    padding: 0;
-
-    width: 17.033px;
-    height: 17.033px;
-
-    position: absolute;
-}
-

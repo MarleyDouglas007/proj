@@ -1,6 +1,5 @@
 // import Image from 'next/image'
 import styles from './page.module.css'
-
 function Titulo ({x, y}){
   return(
     <h2 style={{left:x, top:y}} className={styles.titulo}>
@@ -11,7 +10,7 @@ function Titulo ({x, y}){
 
 export default function Home() {
   return (
-    <main>
+    <main className='main'>
       <Titulo x={26.26} y={119.24}/>
     </main>
   )
