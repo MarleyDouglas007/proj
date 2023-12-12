@@ -3,7 +3,7 @@ import styles from './styles.module.css'
 import Image from 'next/image'
 import logo from '../../public/Frame 7.png'
 import premium from '../../public/Frame 8.png'
-import search from '../../public/Rectangle 4.png'
+// import search from '../../public/Rectangle 4.png'
 import icon from '../../public/Account.png'
 
 function InicialL() {
@@ -94,21 +94,43 @@ export default function RootLayout({ children }) {
                   WebkitTextFillColor: 'transparent',
                 }}
               />
+
               <ItemMenu
-                primeiraLetra="M"
-                textoRestante="ovies"
-                estiloPrimeiraLetra={{ color: 'blue' }}
-              />
+              primeiraLetra="M"
+              textoRestante="ovies"
+              estiloPrimeiraLetra={{
+                background: 'linear-gradient(189deg, #1DA1F2 11.03%, #C93677 79.85%, rgba(255, 255, 255, 0.00) 79.85%)',
+                backgroundClip: 'text',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+              }}
+            />
+
               <ItemMenu
                 primeiraLetra="O"
                 textoRestante="NAs"
-                estiloPrimeiraLetra={{ color: 'blue' }}
+                estiloPrimeiraLetra={{ 
+                  background: 'linear-gradient(114deg, #1A7EC6 16.48%, #8211B7 47.44%)',
+                  backgroundClip: 'text',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+
+
+                }}
               />
+
               <ItemMenu
                 primeiraLetra="N"
                 textoRestante="ews"
-                estiloPrimeiraLetra={{ color: 'blue' }}
+                estiloPrimeiraLetra={{ 
+                  background: 'linear-gradient(180deg, #33ADDF 2.6%, #C93677 100%)',
+                  backgroundClip: 'text',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+
+                }}
               />
+
             </Menu>
             <Premium />
             <Search />

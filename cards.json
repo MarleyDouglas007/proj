@@ -1,0 +1,66 @@
+{
+    "populadres":   {
+
+        "anime1": {
+            "img": "",
+            "id": "01",
+      "nome": "Attack on Titan"
+    },
+    "anime2": {
+        "img": "",
+        "id": "02",
+        "nome": "One Piece"
+    },
+    "anime3": {
+        "img": "",
+        "id": "03",
+      "nome": "Naruto"
+    },
+    "anime4": {
+        "img": "",
+        "id": "04",
+        "nome": "Death Note"
+    },
+    "anime5": {
+        "img": "",
+        "id": "05",
+        "nome": "One Punch Man"
+    },
+    "anime6": {
+        "img": "",
+        "id": "06",
+        "nome": "Demon Slayer"
+    }
+},
+
+
+
+
+"tops":{
+    "anime1": {
+      "img": "",
+      "id": "01",
+      "nome": "Tokyo Revengers"
+    },
+    "anime2": {
+      "img": "",
+      "id": "02",
+      "nome": "One Piece"
+    },
+    "anime3": {
+      "img": "",
+      "id": "03",
+      "nome": "Vinland Saga"
+    },
+    "anime4": {
+      "img": "",
+      "id": "04",
+      "nome": "Blue Lock"
+    },
+    "anime5": {
+      "img": "",
+      "id": "05"
+  }
+}
+  
+}
