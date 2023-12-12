@@ -5,7 +5,6 @@ import logo from '../../public/Frame 7.png'
 import premium from '../../public/Frame 8.png'
 // import search from '../../public/Rectangle 4.png'
 import icon from '../../public/Account.png'
-
 function InicialL() {
   return (
     <span className={styles.degrad}></span>

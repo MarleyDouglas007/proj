@@ -1,5 +1,5 @@
 .titulo{
-  /* font-family: Belleza;
+  font-family: Belleza;
   font-size: 68.133px;
   font-style: normal;
   font-weight: 400;
@@ -7,12 +7,61 @@
   margin: 0;
   padding: 0;
 
-  width: 450px;
-  height: 200px;
-  position: absolute; */
+  color: #F4F4F4;
+font-family: Montserrat;
+font-size: 75px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+width: 874px;
+ 
 }
 
 .card{
   width: 100px;
   height: 200px;
+}
+
+.descricao{
+  width: 530px;
+  color: #D0D0D0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 156.4%; /* 28.152px */
+} 
+
+
+.buttonDefault{
+  border: 1px solid #fff;
+  border-color: white;
+
+  padding: 10px;
+  background: none;
+  color: white;
+  /* border-radius: 30px; */
+  border-radius: 100px;
+  border: 3px solid var(--graaadient, #F22323);
+  display: inline-flex;
+padding: 15px 20px;
+align-items: center;
+gap: 10px;
+
+}
+.button{
+  color: #FFF;
+font-family: Montserrat;
+font-size: 23px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.imgcasal{
+  width: 600px;
+height: 333px;
+flex-shrink: 0;
+border-radius: 10px;
+background: linear-gradient(90deg, rgba(0, 0, 0, 0.44) -38.72%, rgba(0, 0, 0, 0.33) 99.69%);
 }
