@@ -1,5 +1,4 @@
-
-.titulo{
+.titulo {
   font-family: Belleza;
   font-size: 68.133px;
   font-style: normal;
@@ -9,21 +8,32 @@
   padding: 0;
 
   color: #F4F4F4;
-font-family: Montserrat;
-font-size: 75px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-width: 874px;
- 
+  font-family: Montserrat;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 874px;
+
 }
 
-.card{
+.card {
   width: 100px;
   height: 200px;
 }
 
-.descricao{
+.divprincipal{
+  
+  display: flex ;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  margin-top: 100px;
+
+  
+  
+}
+.descricao {
   width: 530px;
   color: #D0D0D0;
   font-family: Montserrat;
@@ -31,10 +41,56 @@ width: 874px;
   font-style: normal;
   font-weight: 600;
   line-height: 156.4%; /* 28.152px */
-} 
+}
 
+.descricao2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  
+  gap: 20px;
 
-.buttonDefault{
+  
+  /* float: right; */
+ 
+  width: 699px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 156.4%;
+  
+}
+.descricao2 h1{
+  
+  color: #D9D9D9;
+  font-family: Montserrat;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 551px;
+}
+
+.descricao2 span{
+  width: 551px;
+}
+
+.imgcasal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imgcasal img {
+  width:1011px;
+ 
+  /* margin-left: auto; */
+}
+
+.buttonDefault {
   border: 3px solid var(#33ADDF, #F22323);
 
 
@@ -47,45 +103,41 @@ width: 874px;
   border-radius: 100px;
   /* border: 3px solid var(--graaadient, #F22323); */
   display: inline-flex;
-padding: 15px 20px;
-align-items: center;
-gap: 10px;
+  padding: 15px 20px;
+  align-items: center;
+  gap: 10px;
 
 
 }
-.button{
+.buttonDefault button{
+  border: 1px solid #fff;
+}
+
+.button { 
   color: #FFF;
-font-family: Montserrat;
-font-size: 23px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  font-family: Montserrat;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
-.imgcasal{
-
-width: 1107px;
-height: 532px;
-flex-shrink:0;
-border-radius: 1px;
-
-
-/* width: 600px;
-height: 333px;
-flex-shrink: 0;
-border-radius: 10px;
-background: linear-gradient(90deg, rgba(0, 0, 0, 0.44) -38.72%, rgba(0, 0, 0, 0.33) 99.69%); */
+.divprincipal {
+  overflow: hidden;
 }
 
-.subtitulo{
+
+.subtitulo {
   color: #FFF;
   font-family: Montserrat;
   font-size: 25px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  
 }
-.numero{
+
+.numero {
   font-family: Montserrat;
   font-size: 25px;
   font-style: normal;
@@ -97,25 +149,36 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.44) -38.72%, rgba(0, 0, 0, 0.
   -webkit-text-fill-color: transparent;
 }
 
-.casalrota{
-  width: 551px;
-  color: #D9D9D9;
+.azcor{
   font-family: Montserrat;
-  font-size: 55px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  left: 1224px;
-}
-.az{
-color: #FFF;
-font-family: Montserrat;
-font-size: 30px;
+font-size: 20px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+background: linear-gradient(180deg, #CF427B 0%, #154587 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+display: flex;
+padding: 5px 9px;
+
+align-items: flex-start; 
+gap: 10px; 
+border-radius: 5px;
+border: 2px solid #CF427B;
 }
-.pequenotext{
+
+.az {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.pequenotext {
   color: #FFF;
   font-family: Montserrat;
   font-size: 15px;
@@ -123,3 +186,49 @@ line-height: normal;
   font-weight: 500;
   line-height: normal;
 }
+
+.navigation {
+  width: 143px;
+  height: 42px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 182.9%;
+  /* 45.725px */
+}
+
+.bloco1 {
+  left: 20px;
+  width: 36.58px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 182.9%;
+  /* 36.58px */
+}
+
+.bloco2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.bloco3 {
+
+}
+
+.account{
+  color: #FFF;
+font-family: Montserrat;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
