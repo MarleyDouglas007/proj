@@ -6,7 +6,6 @@ import img4 from '../../public/imgcard/img4.png'
 import img5 from '../../public/imgcard/img5.png'
 import img6 from '../../public/imgcard/img6.png'
 import img7 from '../../public/imgcard/img7.png'
-import img8 from '../../public/imgcard/img2.png'
 import img9 from '../../public/imgcard/img9.png'
 import img10 from '../../public/imgcard/img10.png'
 import img11 from '../../public/imgcard/img11.png'
@@ -116,6 +115,9 @@ function Card({ img, number = "1", nome }) {
 // }
 //fim
 export default function Home() {
+
+   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; //addc isso//
+
   return (
     <main className="main">
 
@@ -201,7 +203,7 @@ export default function Home() {
 
         {/* titulo da imagem */}
         <div>
-        <h1 className={styles.casalrota}>Don't Toy with Me, Miss Nagatoro</h1>
+        <h1 className={styles}>Don't Toy with Me, Miss Nagatoro</h1>
         </div>
 
             {/* descriçao da imagem */}
@@ -238,17 +240,17 @@ export default function Home() {
 
           <div>
               {/* botao1 */}
-            <button>
+            <button className={styles.buttonDefault}>
                 Animation
             </button>
 
                {/* botao2 */}
-            <button >
+            <button className={styles.buttonDefault} >
               Action
             </button>
 
             {/* botao3 */}
-            <button >
+            <button className={styles.buttonDefault} >
               Adventure
             </button>
         </div>
@@ -260,6 +262,21 @@ export default function Home() {
         </div>
 
       </Section>
+
+
+      {/* QUINTO BLOCO */}
+      <Section>
+      
+      <p>
+        <span className={styles.az}>A-Z List</span> <span className={styles.pequenotext}>Searching anime order by alphabet name A to Z.</span>
+      </p> 
+        <div style={{ display: "flex", gap: "20px" }}>
+          {alphabet.split("").map((letter, index) => (
+            <span key={index}>{letter}</span>
+          ))}
+        </div>
+      </Section>
+      
     </main>
   );
 }

@@ -105,4 +105,21 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.44) -38.72%, rgba(0, 0, 0, 0.
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  left: 1224px;
+}
+.az{
+color: #FFF;
+font-family: Montserrat;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.pequenotext{
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
