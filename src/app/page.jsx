@@ -127,9 +127,9 @@ export default function Home() {
 
   return (
     <main className="main">
-      <Botao className={styles.teste}>
+      {/* <Botao className={styles.teste}>
         <Image src={img5}/>teste
-        </Botao>
+        </Botao> */}
       {/* PRIMEIRO parte */}
       <Section>
         <p>#1 spotight</p>
@@ -234,37 +234,43 @@ export default function Home() {
 
       {/* QUARTA parte  */}
       <Section>
-        <p className={styles.button}>Upcoming</p>
+        <div className={styles.divprincipal4parte}> {/*pai*/}
+              
 
-        <div>
-          <p>
-            <img src="casal2.png"></img>
-          </p>
+              <div>{/*filho 1*/}
+                <p className={styles.titulo4parte}>Upcoming</p>
+
+                <p>
+                  <img src="casal2.png"></img>
+                </p>
+
+              </div>
+
+              <div>{/*filho 2*/}
+
+                <h1>Suzume no tojimari</h1>
+              
+                {/* botao1 */}
+                <button className={styles.buttonDefault}>
+                  Animation
+                </button>
+
+                {/* botao2 */}
+                <button className={styles.buttonDefault} >
+                  Action
+                </button>
+
+                {/* botao3 */}
+                <button className={styles.buttonDefault} >
+                  Adventure
+                </button>
+
+                <p className={styles.descricao}>
+                  A modern action adventure road story where a 17-year-old girl named Suzume helps a mysterious young man close doors from the outer side that are releasing disasters all over in Japan.
+                </p>
+              </div>
+
         </div>
-
-        <div>
-          {/* botao1 */}
-          <button className={styles.buttonDefault}>
-            Animation
-          </button>
-
-          {/* botao2 */}
-          <button className={styles.buttonDefault} >
-            Action
-          </button>
-
-          {/* botao3 */}
-          <button className={styles.buttonDefault} >
-            Adventure
-          </button>
-        </div>
-
-        <div>
-          <p className={styles.descricao}>
-            A modern action adventure road story where a 17-year-old girl named Suzume helps a mysterious young man close doors from the outer side that are releasing disasters all over in Japan.
-          </p>
-        </div>
-
       </Section>
 
 

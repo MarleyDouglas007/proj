@@ -219,16 +219,58 @@ border: 2px solid #CF427B;
   gap: 10px;
 }
 
-.bloco3 {
-
-}
 
 .account{
   color: #FFF;
-font-family: Montserrat;
-font-size: 25px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
+
+/* QUARTA PARTE */
+.divprincipal4parte{
+  border:1px solid #fff;
+  display: flex ;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  margin-top: 100px; 
+}
+
+.titulo4parte{
+
+  margin-left: 60px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.divprincipal4parte h1{
+  margin-left: 50px;
+  
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  
+  
+
+  
+}
+
+.divprincipal4parte img{
+  margin-left: 20px;
+  width: 225px;
+  height: 318px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  /* background: url(/casal2.png), lightgray 50% / cover no-repeat; */
+}
