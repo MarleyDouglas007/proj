@@ -5,6 +5,7 @@ import logo from '../../public/Frame 7.png'
 import premium from '../../public/Frame 8.png'
 // import search from '../../public/Rectangle 4.png'
 import icon from '../../public/Account.png'
+import background from '../../public/background.png'
 function InicialL() {
   return (
     <span className={styles.degrad}></span>
@@ -81,6 +82,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <header>
+         <div style={{backgroundImage: `url(${background.src})`}} className={styles.header} > 
           <div className={styles.nav}>
             <Logo x={70} y={58} />
             <Menu>
@@ -135,6 +137,7 @@ export default function RootLayout({ children }) {
             <Search />
             <Icon />
           </div>
+        </div>  
         </header>
         <main>
           {children}

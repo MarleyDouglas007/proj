@@ -130,8 +130,11 @@ export default function Home() {
       {/* <Botao className={styles.teste}>
         <Image src={img5}/>teste
         </Botao> */}
+
+
       {/* PRIMEIRO parte */}
       <Section>
+        <div className={styles.page_index}>
         <p>#1 spotight</p>
         <div>
           <h1 className={styles.titulo}>Tokyo Revengers: Christmas Showdown</h1>
@@ -157,12 +160,12 @@ export default function Home() {
             <img style={{ width: 10, height: 10 }} src="icons/Vector.png" />
             watch Now
           </button>
-          <button className={styles.buttonDefault}>
+          <button className={styles.buttonDefault2}>
             <img style={{ width: 10, height: 10 }} src="icons/Plus icon.png" />
             add to list
           </button>
         </div>
-
+      </div>
       </Section>
 
       {/* SEGUNDO parte   */}
@@ -223,7 +226,7 @@ export default function Home() {
                 watch Now
               </button>
 
-              <button className={styles.buttonDefault}>
+              <button className={styles.buttonDefault2}>
                 <img style={{ width: 10, height: 10 }} src="icons/Plus icon.png" />
                 add to list
               </button>
@@ -246,10 +249,10 @@ export default function Home() {
 
               </div>
 
-              <div>{/*filho 2*/}
-
+              <div className={styles.rotadiv2}>{/*filho 2*/}
+                
                 <h1>Suzume no tojimari</h1>
-              
+              <div>
                 {/* botao1 */}
                 <button className={styles.buttonDefault}>
                   Animation
@@ -264,8 +267,8 @@ export default function Home() {
                 <button className={styles.buttonDefault} >
                   Adventure
                 </button>
-
-                <p className={styles.descricao}>
+              </div>
+                <p className={styles.descricaodiv2}>
                   A modern action adventure road story where a 17-year-old girl named Suzume helps a mysterious young man close doors from the outer side that are releasing disasters all over in Japan.
                 </p>
               </div>
@@ -280,50 +283,60 @@ export default function Home() {
         <p>
           <span className={styles.az}>A-Z List</span> <span className={styles.pequenotext}>Searching anime order by alphabet name A to Z.</span>
         </p>
-        <div className={styles.azcor} style={{ display: "flex", gap: "20px" }}>
-          {alphabet.split("").map((letter, index) => (
-            <span key={index}>{letter}</span>
-          ))}
-        </div>
+       
+            <div className={styles.azcor} style={{ display: "flex", gap: "20px" }}>
+              {alphabet.split("").map((letter, index) => (
+                <span key={index}>{letter}</span>
+              ))}
+            </div>
 
-        {/* RODA PE BLOCO 01 */}
-        <div>
-          <p>
-            Navigation
+   <div className={styles.footer}>{/*pai_footer*/}
+
+          {/* RODA PE BLOCO 01 */}
+  <div className={styles.footer_rodape}>
+          <div className={styles.footer_nav}> 
+
+            <h2>Navigation</h2>
+
+              <ul>
+                <ul>Browse Popular</ul>
+                <ul>Browse Manga</ul>
+                <ul>Release Calendar</ul>
+                <ul>News</ul>
+              </ul>
+           
+          </div>
+
+          {/* RODA PE BLOCO 02 */}
+          <div className={styles.footer_about}>
+            
+            <h2>About</h2>
+
+              <ul>
+                <li>Privacy Policy</li>
+                <li>Disclaimer</li>
+                <li>Help</li>
+                <li>FAQ</li>
+              </ul>
+            
+          </div>
+
+          {/* RODA PE BLOCO 03 */}
+          <div className={styles.footer_account}>
+            <h2>Accoun</h2>
             <ul>
-              <li>Browse Popular</li>
-              <li>Browse Manga</li>
-              <li>Release Calendar</li>
-              <li>News</li>
+              <li>About</li>
+              <li>Privacy Policy</li>
             </ul>
-          </p>
-        </div>
 
-        {/* RODA PE BLOCO 02 */}
-        <div>
-          <p>
-            <ul>
-              <ul>About</ul>
-              <ul>Privacy Policy</ul>
-              <ul>Disclaimer</ul>
-              <ul>Help</ul>
-              <ul>FAQ</ul>
-            </ul>
-          </p>
-        </div>
+              <div className={styles.media}>
+                <img src='imgiconsp/instagram.png' className='' />
+                <img src='imgiconsp/twitter.png' className='' />
+              </div>  
 
-        {/* RODA PE BLOCO 03 */}
-        <div>
-          <p className={styles.account}>
-            Account
-          </p>
-          <ul>
-            <ul>About</ul>
-            <ul>Privacy Policy</ul>
-          </ul>
-          <img src='imgiconsp/instagram.png' className='' />
-          <img src='imgiconsp/twitter.png' className='' />
-        </div>
+          </div>
+  </div>        
+      </div>
       </Section>
 
 

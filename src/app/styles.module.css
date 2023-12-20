@@ -1,9 +1,14 @@
+.header{
+    height: 919px;
+    opacity: 30%;
+}
 .nav {
     /* border:1px solid #fff; */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    
 }
 
 .logo {
